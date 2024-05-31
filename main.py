@@ -37,7 +37,10 @@ def showPokeneaJson():
     # Obtener el id del contenedor
     contenedor_id = socket.gethostname()
 
+    # Obtener pokenea aleatorio
     pokenea = random.choice(pokeneas)
+
+    # Generar respuesta JSON
     response = {
         "id": pokenea["id"],
         "nombre": pokenea["nombre"],
