@@ -4,7 +4,7 @@ import socket
 
 app = Flask(__name__)
 
-# Datos de ejemplo de Pokeneas
+# Datos de ejemplo de Pokeneas #
 pokeneas = [
     {"id": 1, "nombre": "Bulbasaur", "altura": "0.7m", "habilidad": "Espesura", "imagen": "pokenea1.jpg", "frase": "Mor usted lo tiene todo, parece un sancocho"},
     {"id": 2, "nombre": "Ivysaur", "altura": "1.0m", "habilidad": "Espesura", "imagen": "pokenea2.jpg", "frase": "Viva el JUNIOR!!"},
