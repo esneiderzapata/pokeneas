@@ -1,8 +1,9 @@
-## Explicación de Uso
+## Explicación de Uso Local
 
 1. **Para correr el programa**:
-    - Asegurate de instalar las dependencias usando: `pip install -r requirements.txt`.
-    - Luego, ejecuta el siguiente comando para iniciar la aplicación: `python main.py`.
+    - Asegurate de tener Docker correctamente instalado en tu maquina
+    - Luego, ejecuta el siguiente comando para crear una imagen: `docker build -t pokeneas-image .`.
+    - Finalmente, ejecuta el contenedor en el puerto HTTP por defecto: `docker run -p 80:80 pokeneas-image`.     
 
 2. **Para ver la imagen y frase de un Pokémon**:
     - Abre tu navegador web y navega a la siguiente URL: `http://127.0.0.1:5000/pokeneas`.

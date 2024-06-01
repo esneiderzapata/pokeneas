@@ -11,8 +11,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar el código de la aplicación al contenedor
 COPY . .
 
-# Exponer el puerto en el que la aplicación Flask se ejecutará dentro del contenedor
-EXPOSE 5000
+# Exponer el puerto 80 para la aplicación Flask dentro del contenedor
+EXPOSE 80
 
-# Ejecuta la aplicación Flask cuando el contenedor se inicia
+# Ejecutar la aplicación Flask cuando el contenedor se inicia
 CMD ["python", "main.py"]
