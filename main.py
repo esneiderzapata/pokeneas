@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, render_template
 import random
-import socket
+import os
 
 app = Flask(__name__)
 
@@ -21,7 +21,7 @@ pokeneas = [
 @app.route('/pokeneas', methods=['GET'])
 def showPokenea():
     # Obtener el id del contenedor
-    contenedor_id = socket.gethostname()
+    contenedor_id = os.uname()[1] 
 
     #Obtener pokenea aleatorio
     pokenea = random.choice(pokeneas)
@@ -35,7 +35,7 @@ def showPokenea():
 @app.route('/pokeneas/json', methods=['GET'])
 def showPokeneaJson():
     # Obtener el id del contenedor
-    contenedor_id = socket.gethostname()
+    contenedor_id = os.uname()[1] 
 
     # Obtener pokenea aleatorio
     pokenea = random.choice(pokeneas)
